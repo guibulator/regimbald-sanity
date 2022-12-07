@@ -55,5 +55,6 @@ export default {
       type: "mainImage",
       options: { hotspot: true },
     },
+    { type: "youtube" },
   ],
 };

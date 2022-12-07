@@ -15,8 +15,7 @@ export default {
       name: "slug",
       type: "slug",
       title: "Slug",
-      description:
-        "Some frontends will require a slug to be set to be able to show the post",
+      description: "Some frontends will require a slug to be set to be able to show the post",
       options: {
         source: "title",
         maxLength: 96,
@@ -37,8 +36,7 @@ export default {
       name: "excerpt",
       type: "excerptPortableText",
       title: "Excerpt",
-      description:
-        "This ends up on summary pages, on Google, when people share your post in social media.",
+      description: "This ends up on summary pages, on Google, when people share your post in social media.",
     },
     {
       name: "authors",
@@ -46,7 +44,10 @@ export default {
       type: "array",
       of: [
         {
-          type: "authorReference",
+          type: "reference",
+          to: {
+            type: "author",
+          },
         },
       ],
     },
